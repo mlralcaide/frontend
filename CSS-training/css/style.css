@@ -1,0 +1,32 @@
+body{
+    background-color:brown;
+}
+h1{
+    color:pink;
+}
+p{
+    color:white;
+    font-size: 15px;
+}
+/*Always use the # to target id*/
+#intro{
+    color: blue;
+    background-color: orange;
+}
+/*Class style*/
+/* To select elements with a specific class, use a period character, 
+followed by the name of the class.
+Do NOT start a class or id name with a number!
+*/
+.first{
+    font-size: 40px;
+    text-decoration: underline;
+}
+.section-wrap{
+    border: 3px dotted black;
+}
+/*Descendant selectors*/
+#intro .first em{
+    color: pink;
+    background-color: gray;
+}
