@@ -1,0 +1,93 @@
+<!--Scalable Vector Graphics-->
+<div>
+  <img src="image.svg" alt="sample svg" height="300" />
+</div>
+<!--circle-->
+<div>
+  <svg width="400" height="400">
+    <circle width="400" height="400" cx="80" cy="80" r="50" fill="green" />
+  </svg>
+</div>
+<!--rectangle-->
+<div>
+  <svg width="400" height="100">
+    <rect width="300" height="100" x="20" y="20" fill="green" />
+  </svg>
+</div>
+<div>
+  <svg width="400" heigth="410">
+    <line
+      x1="10"
+      y1="10"
+      x2="200"
+      y2="100"
+      style="stroke: #000000; stroke-linecap: round; stroke-width: 20;"
+    />
+  </svg>
+</div>
+<div>
+  <svg width="2000" height="500">
+    <polyline
+      style="
+        stroke-linejoin: miter;
+        stroke: black;
+        stroke-width: 12;
+        fill: none;
+      "
+      points="100 100, 150 150, 200 100"
+    />
+  </svg>
+</div>
+<div>
+  <svg width="1000" height="500">
+    <ellipse cx="200" cy="100" rx="150" ry="70" style="fill: green;" />
+  </svg>
+</div>
+<div>
+  <svg width="2000" height="2000">
+    <polygon
+      points="100 100, 200 200, 300 0"
+      style="fill: green;"
+      ;
+      stroke="black"
+    />
+  </svg>
+</div>
+<!--animations-->
+<!--To repeat the animation indefinitely, use the value "indefinite" for the repeatCount attribute-->
+<div>
+    <svg width="1000" height="250">
+        <rect width="150" height="150" fill="orange">
+            <animate attributeName="x" from="0" to="300" dur="3s" fill="freeze" repeatCount="2"/>
+    </svg>
+</div>
+<!--Path-->
+<!--
+The following commands are available for path data:
+M: moveto
+L: lineto
+H: horizontal lineto
+V: vertical lineto
+C: curveto
+S: smooth curveto
+Q: quadratic Bézier curve
+T: smooth quadratic Bézier curveto
+A: elliptical Arc
+Z: closepath
+-->
+<!--
+All of the above commands can also be expressed with lower case letters. 
+When capital letters are used, it indicates absolute position; 
+lower case indicates relative position.
+-->
+<div>
+    <svg width="500" height="500">
+        <path d="M 0 0 L200 200 L200 0 Z" style="stroke:#000000; fill:none"/>
+    </svg>
+</div>
+<!--
+  The <canvas> element is only a container for graphics. 
+  You must use a script to actually draw the graphics (usually JavaScript).
+  The <canvas> element must have an id attribute so it can be referred to by JavaScript:
+  <canvas id="canvas1" width="200" height="100"> </canvas>
+-->
