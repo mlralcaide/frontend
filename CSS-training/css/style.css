@@ -30,3 +30,27 @@ Do NOT start a class or id name with a number!
     color: pink;
     background-color: gray;
 }
+/*Font family*/
+/*Separate each value with a comma to indicate that they are alternatives.
+If the name of a font family is more than one word, 
+it must be in quotation marks: "Times New Roman".*/
+.font-title{
+    color: white;
+    background-color: green;
+    text-decoration: underline;
+}
+.serif{
+    font-family: "Times New Roman", Times, serif;
+}
+.sansserif{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.monospace{
+    font-family: 'Courier New', Courier, monospace;
+}
+.cursive{
+    font-family: Florence,cursive;
+}
+.fantasy{
+    font-family: Blippo,fantasy;
+}
